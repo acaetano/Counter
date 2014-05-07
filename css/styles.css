@@ -1,5 +1,79 @@
+body
+{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+}
 
-#counting_text_box
+header
+{
+    width : auto;
+    height : 50px;
+    margin: 0px;
+    background: #333333;
+    text-transform: uppercase;
+    color: #ffffff;
+    box-shadow: 0 5px 7px 0 #000000;
+}
+
+.menu
+{
+    text-align: center;
+    height: 100%;
+}
+
+div.menuitem img
+{
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+#settings_ico
+{
+    -webkit-filter: invert(0.9);
+    -moz-filter: invert(0.9);
+    -o-filter: invert(0.9);
+    filter: invert(0.9);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
+
+.menuitem
+{
+    display: block;
+    line-height: 50px;
+    width: 50px;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#menu_icon
+{
+    width: 50px;
+    height: 50px;
+}
+
+#content
+{
+    height: 100%;
+}
+
+#box_count
+{
+    margin-top: 0.5%;
+}
+
+.box
 {
     border: 1px solid;
     border-color: grey;
@@ -10,9 +84,17 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+#counting_text_box
+{
+    height: 70%;
     width: 70%;
     font-size: 300%;
     margin-bottom: 2%;
+    box-shadow: 10px 10px 5px #444444;
+    text-shadow: 2px 3px 5px #555555;
 }
 
 #counting_text
@@ -21,22 +103,51 @@
     text-align: center;
 }
 
-button
-{
-    border: 1px solid;
-    border-color: grey;
-    border-radius: 7px;
-    background: #ffffff;
-    font-family: arial;
-    font-size: 1em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
 
 #bt_plus1
 {
     font-size: 300%;
     margin-bottom: 2%;
+    width: 40%;
+}
+
+#bt_reset
+{
+    font-size: 150%;
+    width: 20%;
+}
+
+#menu_bottom
+{
+    height: 0;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 0;
+    color: #ffffff;
+    background: #333333;
+    text-transform: uppercase;
+    text-align: center;
+    bottom: 20px;
+    opacity: 0;
+    z-index: 100;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.active
+{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#menu_bottom.menu_bottom_show
+{
+    height: 10%;
+    bottom: 0;
+    opacity: 1;
 }

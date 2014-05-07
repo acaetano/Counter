@@ -2,20 +2,37 @@
 <html>
 <head>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Counter</title>
 </head>
 <body>
-<div id="box_count">
-    <div id="counting_text_box">
-        <span id="counting_text">0</span>
-    </div>
-</div>
-<div id="plus1">
-    <button id="bt_plus1">+1</button>
-</div>
-<div id="reset">
-    <button id="bt_reset">Reset</button>
-</div>
+<header>
+    <nav class="menu">
+        <div id="settings" class="menuitem">
+            <!--<canvas id="menu_icon"></canvas>-->
+            <img id="settings_ico" src="images/gear.png" alt="Settings">
+        </div>
+    </nav>
+</header>
+<section id="content">
+    <br>
+    <section id="box_count">
+        <div id="counting_text_box" class="box">
+            <span id="counting_text">0</span>
+        </div>
+    </section>
+    <section id="plus1">
+        <button id="bt_plus1" class="box">+1</button>
+    </section>
+    <section id="reset">
+        <button id="bt_reset" class="box">Reset</button>
+    </section>
+    <nav id="menu_bottom">
+        <div>
+            Settings
+        </div>
+    </nav>
+</section>
 </body>
 </html>
