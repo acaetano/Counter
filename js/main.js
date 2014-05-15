@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
     document.getElementById('bt_plus1').onclick = fct_bt_plus1;  // defines function to be called by button bt_plus1
     document.getElementById('bt_plus1').ontouchstart = fct_bt_plus1;  // defines function to be called by button bt_plus1
-    document.getElementById('bt_reset').onclick = fct_bt_reset;  // defines function to be called by button bt_reset
-    document.getElementById('bt_reset').ontouchstart = fct_bt_reset;  // defines function to be called by button bt_reset
+    document.getElementById('reset').onclick = fct_bt_reset;  // defines function to be called by button bt_reset
+    document.getElementById('reset').ontouchstart = fct_bt_reset;  // defines function to be called by button bt_reset
     document.getElementById('settings').onclick = fct_show_settings;  // defines function to be called by button bt_reset
     document.getElementById('settings').ontouchstart = fct_show_settings;  // defines function to be called by button bt_reset
 });

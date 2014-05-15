@@ -1,9 +1,22 @@
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+html
+{
+    margin: 0;
+    height: 100% !important;
+    width: 100%;
+    bottom: 0;
+}
+
 body
 {
     margin: 0px;
     height: 100%;
+    min-height: 100%;
     width: 100%;
     bottom: 0;
+    overflow: hidden;
 }
 
 header
@@ -59,18 +72,23 @@ div.menuitem img
 
 #menu_icon
 {
-    width: 50px;
-    height: 50px;
+    width: 20%;
+    height: 20%;
 }
 
 #content
 {
     height: 100%;
+    min-height: 100%;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 #box_count
 {
-    margin-top: 0.5%;
+    height: 40%;
+    margin: 2%;
 }
 
 .box
@@ -79,7 +97,7 @@ div.menuitem img
     border-color: grey;
     border-radius: 7px;
     background: #ffffff;
-    font-family: arial;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1em;
     display: block;
     margin-left: auto;
@@ -89,23 +107,42 @@ div.menuitem img
 
 #counting_text_box
 {
-    height: 70%;
+    height: 100%;
     width: 70%;
-    font-size: 300%;
+    display: table;
+    font-size: 700%;
     margin-bottom: 2%;
     box-shadow: 10px 10px 5px #444444;
     text-shadow: 2px 3px 5px #555555;
 }
 
+#plus1
+{
+    height: 20%;
+    margin: 2%;
+}
+
+#reset
+{
+    height: 10%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 150%;
+}
+
 #counting_text
 {
-    display: block;
+    vertical-align: middle;
+    display: table-cell;
     text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
 #bt_plus1
 {
+    height: 100%;
     font-size: 300%;
     margin-bottom: 2%;
     width: 40%;
@@ -113,6 +150,7 @@ div.menuitem img
 
 #bt_reset
 {
+    height: 100%;
     font-size: 150%;
     width: 20%;
 }
@@ -127,7 +165,7 @@ div.menuitem img
     background: #333333;
     text-transform: uppercase;
     text-align: center;
-    bottom: 20px;
+    bottom: 0;
     opacity: 0;
     z-index: 100;
     -webkit-transition: all 0.3s;
@@ -135,6 +173,7 @@ div.menuitem img
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    display: table;
 }
 
 .active
@@ -150,4 +189,10 @@ div.menuitem img
     height: 10%;
     bottom: 0;
     opacity: 1;
+}
+
+#menu_bottom_caption
+{
+    display: table-cell;
+    vertical-align: middle;
 }
