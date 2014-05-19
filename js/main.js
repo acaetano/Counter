@@ -11,6 +11,7 @@ function fct_bt_reset()
 {
     counter = 0;
     document.getElementById('counting_text').innerText = counter;
+    classie.toggle(reset_ico, 'active');
 }
 
 function fct_show_settings()
